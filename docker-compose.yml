@@ -1,0 +1,30 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: .docker/Dockerfile
+    ports:
+      - 80:80 # Troque a porta caso seja necessário
+    volumes:
+      - .:/var/www/html
+    links:
+      - bancodedados
+  bancodedados:
+    image: mariadb:latest
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_DATABASE: agenda
+      MYSQL_USER: leo
+      MYSQL_PASSWORD: supersenhasecreta
+      MYSQL_ROOT_PASSWORD: supersenhasecreta
+
+  myadmin:
+      image: phpmyadmin/phpmyadmin:latest
+      links:
+        - bancodedados
+      ports:
+        - 8080:80
+      environment:
+        - PMA_ARBITRARY=1
