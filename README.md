@@ -27,7 +27,7 @@ Start and build containers
 
 
 Start containers
-`$ docker-compose up`
+`$ docker-compose up -d`
 
 
 Stop Containers
