@@ -54,3 +54,5 @@ https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-con
 https://medium.com/jundevelopers/ambiente-de-desenvolvimento-php-com-docker-parte-1-ide-php-banco-de-dados-9459a147073c
 
 https://medium.com/@danilolutz/ambiente-de-desenvolvimento-php-com-docker-parte-2-qualidade-de-c%C3%B3digo-git-4ca9c5cbfc6c
+
+https://onebitcode.com/o-que-e-e-como-funciona-o-rancher/
