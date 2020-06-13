@@ -5,13 +5,21 @@
 `sudo apt-get update`
 
 `sudo apt-get -y install apt-transport-https ca-certificates curl software-properties-common gnupg2`
-
+UBUNTU
 `curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -`
+
+`echo -e "\ndeb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable" | sudo tee -a /etc/apt/sources.list`
+
+
+DEBIAN
 
 `curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -`
 
+`add-apt-repository \
+“deb [arch=amd64] https://download.docker.com/linux/debian \
+$(lsb_release -cs) \
+stable”`
 
-`echo -e "\ndeb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable" | sudo tee -a /etc/apt/sources.list`
 
 `sudo apt-get update`
 
