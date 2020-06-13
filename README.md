@@ -6,6 +6,7 @@
 
 `sudo apt-get -y install apt-transport-https ca-certificates curl software-properties-common gnupg2`
 
+-----------------------------------------------------
 
 UBUNTU
 
@@ -20,6 +21,7 @@ DEBIAN
 
 `echo -e "\ndeb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable" | sudo tee -a /etc/apt/sources.list`
 
+-----------------------------------------------------
 
 `sudo apt-get update`
 
